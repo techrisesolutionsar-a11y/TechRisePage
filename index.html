@@ -3,129 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NovaByte — Web Development, 3D Modeling & IT Maintenance</title>
+  <title>TechRiseSolutions — Web Development, 3D Modeling & IT Maintenance</title>
   <meta name="description" content="We are a microenterprise offering web development, 3D modeling, preventive & corrective computer maintenance (software & hardware), and website maintenance.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="NovaByte — Digital Services for Small Businesses" />
+  <meta property="og:title" content="TechRiseSolutions — Digital Services for Small Businesses" />
   <meta property="og:description" content="Web development, 3D modeling, computer maintenance, and website care for growing businesses." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/111827/ffffff&text=NovaByte" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/111827/ffffff&text=TechRiseSolutions" />
   <meta name="theme-color" content="#111827" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #0b1020;
-      --panel: #0f172a; /* slate-900 */
-      --muted: #94a3b8; /* slate-400 */
-      --text: #e5e7eb;  /* gray-200 */
-      --brand: #7c3aed; /* violet-600 */
-      --brand-2: #22d3ee; /* cyan-400 */
-      --ring: #a78bfa; /* violet-400 */
-      --ok: #10b981; /* emerald-500 */
-      --warn: #f59e0b; /* amber-500 */
-      --danger: #ef4444; /* red-500 */
-      --card: #111827; /* gray-900 */
-      --card-2: #0b1220;
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg: #ffffff;
-        --panel: #fff;
-        --muted: #475569; /* slate-600 */
-        --text: #0f172a;  /* slate-900 */
-        --brand: #6d28d9;
-        --brand-2: #0891b2;
-        --ring: #7c3aed;
-        --card: #f8fafc; /* slate-50 */
-        --card-2: #f1f5f9;
-      }
-      header.backdrop{
-        backdrop-filter: saturate(180%) blur(12px);
-        background: rgba(255,255,255,.7);
-      }
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1180px;margin:0 auto;padding:0 1.2rem}
-    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.1rem;border-radius:14px;border:1px solid transparent;font-weight:600;transition:.2s}
-    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff}
-    .btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(124,58,237,.25)}
-    .btn.ghost{border-color:#334155;background:transparent}
-    .btn.ghost:hover{border-color:var(--ring)}
-    header{position:sticky;top:0;z-index:30}
-    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-    .logo{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:.3px}
-    .logo .mark{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 200deg, var(--brand), var(--brand-2));display:grid;place-items:center;box-shadow:0 6px 16px rgba(124,58,237,.35)}
-    nav ul{display:flex;list-style:none;margin:0;padding:0;gap:1.2rem}
-    nav a{padding:.6rem .8rem;border-radius:10px}
-    nav a:hover{background:rgba(124,58,237,.15)}
-    .mobile-toggle{display:none}
-
-    .hero{padding:72px 0 40px}
-    .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
-    .eyebrow{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .6rem;border:1px dashed #334155;border-radius:999px;color:var(--muted);font-size:.85rem}
-    h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.1;margin:.8rem 0}
-    .lead{font-size:1.1rem;color:var(--muted);max-width:56ch}
-    .hero-card{background:linear-gradient(180deg,rgba(124,58,237,.1),rgba(34,211,238,.08));border:1px solid #2b364b;border-radius:24px;padding:1.2rem}
-    .statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
-    .stat{background:var(--card);border:1px solid #25304a;border-radius:18px;padding:1rem;text-align:center}
-    .stat b{font-size:1.4rem}
-
-    .section{padding:64px 0}
-    .section h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin:0 0 .8rem}
-    .muted{color:var(--muted)}
-
-    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.2rem}
-    .card{background:var(--card);border:1px solid #25304a;border-radius:20px;padding:1.1rem;display:flex;flex-direction:column;gap:.7rem}
-    .card .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(124,58,237,.25),rgba(34,211,238,.25))}
-    .card ul{margin:.2rem 0 0 1rem}
-    .card li{margin:.35rem 0}
-
-    .stack{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.6rem}
-    .pill{border:1px solid #334155;padding:.35rem .6rem;border-radius:999px;font-size:.85rem;color:var(--muted)}
-
-    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
-    .shot{border-radius:16px;overflow:hidden;border:1px solid #25304a;background:linear-gradient(135deg,#0b1220,#111827);min-height:180px;display:grid;place-items:center}
-
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:center}
-    .about p{color:var(--muted)}
-
-    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
-    .plan{background:var(--card);border:1px solid #25304a;border-radius:20px;padding:1.2rem;display:flex;flex-direction:column;gap:.8rem}
-    .plan h3{margin:.2rem 0}
-    .plan .price{font-size:2rem;font-weight:800}
-
-    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem}
-    form{background:var(--card);border:1px solid #25304a;border-radius:20px;padding:1.2rem}
-    input,textarea{width:100%;padding:.85rem 1rem;border-radius:12px;border:1px solid #334155;background:transparent;color:var(--text)}
-    textarea{min-height:140px;resize:vertical}
-    label{display:block;margin:.6rem 0 .35rem;font-weight:600}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
-    .success{display:none;margin-top:.6rem;padding:.8rem;border:1px solid #1f5137;background:rgba(16,185,129,.12);border-radius:12px}
-
-    footer{border-top:1px solid #25304a;margin-top:48px}
-    footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:1.2rem 0;color:var(--muted)}
-
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero .grid, .contact, .split{grid-template-columns:1fr}
-      .cards{grid-template-columns:repeat(2,1fr)}
-      .portfolio{grid-template-columns:repeat(2,1fr)}
-      .pricing{grid-template-columns:1fr}
-      .statbar{grid-template-columns:repeat(3,1fr)}
-    }
-    @media (max-width: 640px){
-      nav ul{display:none}
-      .mobile-toggle{display:inline-flex;align-items:center;gap:.4rem;border:1px solid #334155;border-radius:12px;padding:.5rem .7rem;background:transparent;color:inherit}
-      .cards{grid-template-columns:1fr}
-      .portfolio{grid-template-columns:1fr}
-      .statbar{grid-template-columns:1fr 1fr 1fr}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Header -->
@@ -133,7 +23,7 @@
     <div class="container wrap">
       <a href="#home" class="logo">
         <span class="mark" aria-hidden="true">⚡</span>
-        <span>NovaByte</span>
+        <span>TechRiseSolutions</span>
       </a>
       <nav aria-label="Primary navigation">
         <ul>
@@ -169,9 +59,9 @@
           <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">WordPress</span><span class="pill">WooCommerce</span><span class="pill">Blender</span><span class="pill">Fusion 360</span><span class="pill">Windows</span><span class="pill">Linux</span>
         </div>
         <div class="portfolio" style="margin-top:1rem">
-          <div class="shot">Landing Page</div>
-          <div class="shot">E‑commerce</div>
-          <div class="shot">3D Product</div>
+          <div class="shot shot_main_1"></div>
+          <div class="shot shot_main_2"></div>
+          <div class="shot shot_main_3"></div>
         </div>
       </div>
     </div>
@@ -241,12 +131,12 @@
       <h2>Portfolio</h2>
       <p class="muted">Algunos ejemplos.</p>
       <div class="portfolio">
-        <div class="shot">Restaurant Site</div>
-        <div class="shot">Online Store</div>
-        <div class="shot">3D Chair Render</div>
-        <div class="shot">Booking Landing</div>
-        <div class="shot">Company Blog</div>
-        <div class="shot">3D House Exterior</div>
+        <a href="https://theeloteco.com" target="_blank"><div class="shot shot_1"></div></a>
+        <a href="https://www.figma.com/proto/iZ7Xo3eOrbHq7Se4x9RdLg/blue-jay-s?node-id=0-1&t=d57JRgErpSZbbKRX-1" target="_blank"><div class="shot shot_2"></div></a>
+        <a href="https://jesusrodrigo.netlify.app" target="_blank"><div class="shot shot_3"></div></a>
+        <a href="https://karggu.com" target="_blank"><div class="shot shot_4"></div></a>
+        <a href="https://drive.google.com/drive/folders/1cXjGcu5LSSFXi2bnktHioX6dBhyFDcyY" target="_blank"><div class="shot shot_5"></div></a>
+        <a href="https://drive.google.com/drive/folders/1cXjGcu5LSSFXi2bnktHioX6dBhyFDcyY" target="_blank"><div class="shot shot_6"></div></a>
       </div>
     </div>
   </section>
@@ -356,8 +246,8 @@
         <h2>Contacto</h2>
         <p class="muted">¿Prefieres el correo electrónico? Escríbenos y te responderemos en 1 o 2 días hábiles.</p>
         <ul style="line-height:2">
-          <li><b>Email:</b> <a href="mailto:hello@novabyte.dev">hello@novabyte.dev</a></li>
-          <li><b>Phone:</b> <a href="tel:+525512345678">(+52) 56 6128 5584</a></li>
+          <li><b>Email:</b> <a href="mailto:techrisesolutionsar@gmail.com">techrisesolutionsar@gmail.com</a></li>
+          <li><b>Phone:</b> <a href="tel:+5215522172531">(+52) 15522172531</a></li>
           <li><b>Horas:</b> Lunes – Viernes, 9:00–18:00</li>
           <li><b>Lugar:</b> Ciudad de México, CDMX (Remote & en sitio)</li>
         </ul>
@@ -372,56 +262,14 @@
 
   <footer>
     <div class="container wrap">
-      <div class="logo"><span class="mark" aria-hidden="true">⚡</span><span>NovaByte</span></div>
-      <div>© <span id="year"></span> NovaByte. Todos los desrechos reservados.</div>
+      <div class="logo"><span class="mark" aria-hidden="true">⚡</span><span>TechRiseSolutions</span></div>
+      <div>© <span id="year"></span> TechRiseSolutions. Todos los desrechos reservados.</div>
       <div style="display:flex;gap:.6rem;flex-wrap:wrap">
         <a class="pill" href="#privacy">Privacidad</a>
         <a class="pill" href="#terms">Terminos y condiciones</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    // Mobile menu (simple reveal)
-    const toggle = document.querySelector('.mobile-toggle');
-    toggle?.addEventListener('click', () => {
-      const nav = document.querySelector('nav ul');
-      const open = nav.style.display === 'flex';
-      nav.style.display = open ? 'none' : 'flex';
-      nav.style.flexDirection = 'column';
-      nav.style.gap = '.4rem';
-      toggle.setAttribute('aria-expanded', String(!open));
-    });
-
-    // Smooth hash scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href').slice(1);
-        const el = document.getElementById(id);
-        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
-      });
-    });
-
-    // Year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Fake form handler (replace with your backend or Formspree)
-    const form = document.getElementById('contactForm');
-    form?.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      // Basic validation
-      const data = Object.fromEntries(new FormData(form).entries());
-      if(!data.name || !data.email || !data.message){
-        alert('Please complete name, email, and project details.');
-        return;
-      }
-      // Example: open mailto as fallback
-      const subject = encodeURIComponent(`[Quote] ${data.service || 'Service'} — ${data.name}`);
-      const body = encodeURIComponent(`${data.message}\n\nName: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || ''}`);
-      window.location.href = `mailto:hello@novabyte.dev?subject=${subject}&body=${body}`;
-      document.getElementById('successMsg').style.display = 'block';
-      form.reset();
-    });
-  </script>
+  <script src="./main.js"></script>
 </body>
 </html>
