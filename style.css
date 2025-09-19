@@ -12,23 +12,23 @@
       --card: #111827; /* gray-900 */
       --card-2: #0b1220;
     }
-    @media (prefers-color-scheme: light){
+    /* @media (prefers-color-scheme: light){
       :root{
         --bg: #ffffff;
         --panel: #fff;
-        --muted: #475569; /* slate-600 */
-        --text: #0f172a;  /* slate-900 */
+        --muted: #475569; 
+        --text: #0f172a;  
         --brand: #6d28d9;
         --brand-2: #0891b2;
         --ring: #7c3aed;
-        --card: #f8fafc; /* slate-50 */
+        --card: #f8fafc;
         --card-2: #f1f5f9;
       }
       header.backdrop{
         backdrop-filter: saturate(180%) blur(12px);
         background: rgba(255,255,255,.7);
       }
-    }
+    } */
     *{box-sizing:border-box}
     html,body{height:100%}
     body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
