@@ -1,4 +1,13 @@
+'use client'
+import axios from "axios"
+
 export default function Contact(){
+
+  const submitForm = async e =>{
+    const res = await axios.post(process.env.NEXT_PUBLIC_API)
+    console.log(res.data)
+  }
+
   return(
     //Contact
     <section id="contact" className="section">
@@ -38,7 +47,7 @@ export default function Contact(){
             <label htmlFor="message">Detalles del proyecto</label>
             <textarea id="message" name="message" placeholder="Escribe una breve descripcion de lo que necesitas..." required></textarea>
             <div style={{display:"flex",gap:".8rem",alignItems:"center",marginTop:".8rem"}}>
-              <button type="submit" className="btn primary">Enviar solicitud</button>
+              <button type="submit" className="btn primary" onClick={submitForm}>Enviar solicitud</button>
               <a className="btn ghost" href="https://wa.me/5522172531" target="_blank" rel="noopener">Chat en WhatsApp</a>
             </div>
             <div className="success" id="successMsg" role="status">Thank you! We’ll get back to you shortly.</div>
