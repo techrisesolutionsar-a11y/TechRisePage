@@ -19,10 +19,11 @@ export default function About(){
         </div>
         <div>
           <h2>Precios simples</h2>
+          <p className="text-yellow">Los precios pueden variar dependiendo las necesidades del cliente.</p>
           <div className="pricing">
             <div className="plan">
               <h3>Sitio de inicio</h3>
-              <div className="price">Desde $4,999 MXN</div>
+              <div className="price">Desde $1,999 MXN</div>
               <p className="muted">Sitio de una sola página o página de destino, entrega <strong>ULTRA RAPIDA.</strong></p>
               <ul>
                 <li>SEO basico</li>
@@ -33,7 +34,7 @@ export default function About(){
             </div>
             <div className="plan" style={{borderColor:"var(--ring)"}}>
               <h3>Sitio web empresarial</h3>
-              <div className="price">Desde $25,999 MXN</div>
+              <div className="price">Desde $14,999 MXN</div>
               <p className="muted">Sitio de varias páginas diseñado para el crecimiento.</p>
               <ul>
                 <li>SEO Optimizado</li>

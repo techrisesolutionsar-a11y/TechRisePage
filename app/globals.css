@@ -218,3 +218,7 @@
   background: rgb(231, 202, 34);
   color: black;
 }
+
+.text-yellow {
+  color: #f59e0b !important; /* amber-500 */
+}
